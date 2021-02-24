@@ -13,5 +13,6 @@ it.skip("should create a game document", async () => {
 
 it.skip("shouldn't create a game document without a game id", async () => {
   const response = await insertGame.handler({ path: "insertGame" });
+  //smth
   expect(response.statusCode).toBe(400);
 });
